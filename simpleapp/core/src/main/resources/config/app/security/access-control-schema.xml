@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<access-control-schema>
+  <group id="ReadMasterData" type="group">
+    <permissions>
+      <permission id="doNormalThings"/>
+    </permissions>
+  </group>
+  <group id="Chief" type="role">
+    <inherits>
+      <group-ref>ReadMasterData</group-ref>
+    </inherits>
+    <permissions>
+      <permission id="doSuperThings"/>
+    </permissions>
+  </group>
+  
+</access-control-schema>
